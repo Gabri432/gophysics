@@ -4,7 +4,7 @@ const (
 	//Earth Gravity constant in meters per square second
 	GRAVITY = 9.81
 
-	//Light speed on void in meters per second.
+	//Light speed on vacuum in meters per second.
 	C           = 299792452
 	LIGHT_SPEED = C
 
@@ -49,6 +49,9 @@ const (
 	//Light year in meters
 	LIGHT_YEAR = 9.46e15
 
+	//Hubble Constant in (km/s)/Mpc, Mpc is MegaParsec, for more info https://en.wikipedia.org/wiki/Hubble%27s_law
+	HUBBLE = 69.8
+
 	//Proton Mass in kilograms
 	PROTON_MASS = 1.672e-27
 
@@ -64,7 +67,7 @@ const (
 	//Avogadro Constant (with grams) in molecules per mole
 	AVOGADRO = 6.022e23
 
-	//Ideal Gasses Constant in [(Joule) / (Mole × Kelvin Deg.)]
+	//Ideal Gasses Constant in [(Joule) / (Mole × Kelvin Degrees)]
 	R = 8.316
 
 	//Thermal Expansion Coefficient 1/273 <=> 0.036
@@ -112,8 +115,8 @@ const (
 	//Tesla in [Gauss]
 	TESLA = 10e6
 
-	//Atomic Mass Unit in kilograms
-	ATOM_MASSUNIT = 1.66043e-27
+	//Atomic Mass in kilograms
+	ATOM_MASS = 1.66053e-27
 
 	//Air Density in [kilograms/(meters**3)]
 	AIR_DENSITY = 1.29
