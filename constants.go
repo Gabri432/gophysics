@@ -5,7 +5,8 @@ const (
 	GRAVITY = 9.81
 
 	//Light speed on void in meters per second.
-	LIGHT = 299792452
+	C           = 299792452
+	LIGHT_SPEED = C
 
 	//Distance Moon-Earth in meters
 	LUNARDIST = 384_000_000
@@ -70,7 +71,13 @@ const (
 	THERM_EXPANSCOEFF = 1 / 273
 
 	//Planck Constant in [(meters^2 × kilograms) / (seconds)]
-	PLANCK = 6.626e-34
+	PLANCK = 6.6260693e-34
+
+	//Planck Mass in kilograms
+	PLANCK_MASS = 2.17645e-8
+
+	//Planck Time in seconds
+	PLANCK_TIME = 5.391e-44
 
 	//Stefan-Boltzmann Constant in [Watt/(meters^2 * Kelvin^4)]
 	STEFBOLTZ = 5.67e-8
@@ -81,8 +88,8 @@ const (
 	//Dielectric constant on void in [Faraday/meters]
 	DIELECTRIC = 8.854e-12
 
-	//Electron Volt in Joule
-	EV = 1.602e-19
+	//Elementary Charge in Coulomb
+	ELEM_CHARGE = 1.602e-19
 
 	//Silver resistivity
 	SILVER_RESISTIVITY = 1.6e-8
@@ -113,6 +120,9 @@ const (
 
 	//Water Density in [kilograms/(meters**3)]
 	WATER_DENSITY = 10e3
+
+	//Helium Mass
+	HELIUM_MASS = 5.006e-27
 
 	//Atmosphere in Pascal
 	ATM = 1.013e5
