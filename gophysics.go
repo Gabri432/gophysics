@@ -13,8 +13,8 @@ package gophysics
 
 import "math"
 
-//Power calls the math.Pow method to return base**power
-func Power(base, power float64) float64 {
+//PowerAt calls the math.Pow method to return base**power
+func PowerAt(base, power float64) float64 {
 	return math.Pow(base, power)
 }
 
@@ -56,4 +56,39 @@ func Density(weight, volume float64) float64 {
 //Intensity is the power/area ratio
 func Intensity(power, area float64) float64 {
 	return power / area
+}
+
+//Potential Energy is the product between
+func PotentialEner(mass, acceleration, height float64) float64 {
+	return mass * acceleration * height
+}
+
+//Kinetic Energy is the product between
+func KineticEner(mass, speed float64) float64 {
+	return (1 / 2) * mass * (speed * speed)
+}
+
+//Mechanic Energy formula
+func MechanicalEner(potential, kinetic float64) float64 {
+	return potential + kinetic
+}
+
+//Momentum is the product between
+func Momentum(mass, speed float64) float64 {
+	return mass * speed
+}
+
+//Power is the power/area ratio
+func Power(work, time float64) float64 {
+	return work / time
+}
+
+//Potential Gravitational Energy
+func PotentialGravEner(mass, height float64) float64 {
+	return mass * GRAVITY * height
+}
+
+//Potential Elastic Energy
+func PotentialElasticEner(elasticConstant, distance float64) float64 {
+	return (1 / 2) * elasticConstant * (distance * distance)
 }
