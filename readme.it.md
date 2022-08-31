@@ -46,3 +46,6 @@ func main() {
 299792453  
 
 ```
+
+## Nota bene
+- Le formule sono state prese dal seguente libro : Titolo - "Fisica volume 1", Autori - ["Paolo Mazzoldi", "Massimo Nigro", "Cesare Voci"].

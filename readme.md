@@ -47,3 +47,6 @@ func main() {
 299792453  
 
 ```
+
+## Notes
+- Formulas were taken from this italian book: Title - "Fisica Volume 1", Authors - ["Paolo Mazzoldi", "Massimo Nigro", "Cesare Voci"].
