@@ -83,12 +83,42 @@ func Power(work, time float64) float64 {
 	return work / time
 }
 
-//Potential Gravitational Energy
+//Potential Gravitational Energy, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
 func PotentialGravEner(mass, height float64) float64 {
 	return mass * GRAVITY * height
 }
 
-//Potential Elastic Energy
+//Potential Elastic Energy, check for more information
 func PotentialElasticEner(elasticConstant, distance float64) float64 {
 	return (1 / 2) * elasticConstant * (distance * distance)
+}
+
+//Hagen-Poiseuille law, check for more information https://en.wikipedia.org/wiki/Hagen%E2%80%93Poiseuille_equation
+func LawHagenPoiseuille(tubeRadius, pressureGradient, fluidViscosity, tubeLength float64) float64 {
+	return ((3.14159 * math.Pow(tubeRadius, 4)) / (8 * fluidViscosity * tubeLength)) * pressureGradient
+}
+
+//Stokes law, check for more information https://en.wikipedia.org/wiki/Stokes%27_law
+func LawStokes(fluidViscosity, radius, speed float64) float64 {
+	return 6 * 3.14159 * fluidViscosity * radius * speed
+}
+
+//Universal Gravitational Law (Gravitational Attraction Law), check for more information https://en.wikipedia.org/wiki/Gravity
+func GravAttract(mass1, mass2, distance float64) float64 {
+	return (G * mass1 * mass2) / (distance * distance)
+}
+
+//Gravitational Field of an object
+func GravField(mass, distance float64) float64 {
+	return (G * mass) / (distance * distance)
+}
+
+//Potential Gravitatonal Energy between two masses, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
+func PotentialGravEner2(mass1, mass2, distance float64) float64 {
+	return -1 * ((G * mass1 * mass2) / (distance))
+}
+
+//Escape Speed, check for more information https://en.wikipedia.org/wiki/Escape_velocity
+func EscapeSpeed(mass, radius float64) float64 {
+	return math.Pow((2*G*mass)/(radius), 0.5)
 }
