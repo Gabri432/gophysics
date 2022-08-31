@@ -1,4 +1,7 @@
 31/08/2022
 
-v0.9.4
+v0.10.0-beta
+ADDED - Each file will contain formulas of the same Physics field, in order to improve code clarity.
+
+v0.9.4-beta
 PATCH - Fixing grammar error in readme.md
