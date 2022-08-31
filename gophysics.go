@@ -87,11 +87,6 @@ func Power(work, time float64) float64 {
 	return work / time
 }
 
-//Potential Gravitational Energy, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
-func PotentialGravEner(mass, height float64) float64 {
-	return mass * GRAVITY * height
-}
-
 //Potential Elastic Energy, check for more information https://en.wikipedia.org/wiki/Elastic_energy
 func PotentialElasticEner(elasticConstant, distance float64) float64 {
 	return (1 / 2) * elasticConstant * (distance * distance)
@@ -105,26 +100,6 @@ func LawHagenPoiseuille(fluidViscosity, pipeLength, flowRate, pipeRadius float64
 //Stokes law, check for more information https://en.wikipedia.org/wiki/Stokes%27_law
 func LawStokes(fluidViscosity, radius, speed float64) (force float64) {
 	return 6 * 3.14159 * fluidViscosity * radius * speed
-}
-
-//Universal Gravitational Law (Gravitational Attraction Law), check for more information https://en.wikipedia.org/wiki/Gravity
-func GravAttract(mass1, mass2, distance float64) float64 {
-	return (G * mass1 * mass2) / (distance * distance)
-}
-
-//Gravitational Field of an object, check for more information https://en.wikipedia.org/wiki/Gravity
-func GravField(mass, distance float64) float64 {
-	return (G * mass) / (distance * distance)
-}
-
-//Potential Gravitatonal Energy between two masses, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
-func PotentialGravEner2(mass1, mass2, distance float64) float64 {
-	return -1 * ((G * mass1 * mass2) / (distance))
-}
-
-//Escape Speed, check for more information https://en.wikipedia.org/wiki/Escape_velocity
-func EscapeSpeed(mass, radius float64) float64 {
-	return math.Pow((2*G*mass)/(radius), 0.5)
 }
 
 //Doppler effect (when listener is getting closer to the sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
