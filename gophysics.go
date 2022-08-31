@@ -110,7 +110,7 @@ func GravAttract(mass1, mass2, distance float64) float64 {
 	return (G * mass1 * mass2) / (distance * distance)
 }
 
-//Gravitational Field of an object
+//Gravitational Field of an object, check for more information https://en.wikipedia.org/wiki/Gravity
 func GravField(mass, distance float64) float64 {
 	return (G * mass) / (distance * distance)
 }
