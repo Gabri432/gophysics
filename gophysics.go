@@ -90,7 +90,7 @@ func PotentialGravEner(mass, height float64) float64 {
 	return mass * GRAVITY * height
 }
 
-//Potential Elastic Energy, check for more information
+//Potential Elastic Energy, check for more information https://en.wikipedia.org/wiki/Elastic_energy
 func PotentialElasticEner(elasticConstant, distance float64) float64 {
 	return (1 / 2) * elasticConstant * (distance * distance)
 }
