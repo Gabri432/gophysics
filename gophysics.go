@@ -127,26 +127,6 @@ func EscapeSpeed(mass, radius float64) float64 {
 	return math.Pow((2*G*mass)/(radius), 0.5)
 }
 
-//Gay-Lussac first law  (Volume variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
-func LawGayLussacVolume(volume, celsiusDeg_Temperature float64) float64 {
-	return volume * (1 + (1/273)*(celsiusDeg_Temperature))
-}
-
-//Gay-Lussac second law (Pressure Variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
-func LawGayLussacPressure(pressure, celsiusDeg_Temperature float64) float64 {
-	return pressure * (1 + (1/273)*(celsiusDeg_Temperature))
-}
-
-//Net Heat Energy Transfer, check for more information https://en.wikipedia.org/wiki/Rate_of_heat_flow
-func NetHeatEnergyTransfer(thermalConductivityConstant, area, kelvinDeg_HeatVariation, time, width float64) float64 {
-	return -1 * (thermalConductivityConstant * area * kelvinDeg_HeatVariation * time) / (width)
-}
-
-//Heat Flux, check for more information https://en.wikipedia.org/wiki/Thermal_conductivity
-func HeatFlux(thermalConductivityConstant, startingTemperatureKelvin, finalTemperatureKelvin, distance float64) float64 {
-	return -1 * thermalConductivityConstant * (finalTemperatureKelvin - startingTemperatureKelvin) / distance
-}
-
 //Doppler effect (when listener is getting closer to the sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
 func DopplerCloser(speed, frequence float64) float64 {
 	return (1 + (speed / 340)) * frequence
@@ -205,11 +185,6 @@ func LawOhm1(resistance, currentIntensity float64) (voltage float64) {
 //Second Ohm law, check for more information https://en.wikipedia.org/wiki/Ohm%27s_law
 func LawOhm2(resistivity, length, area float64) (electricalResistance float64) {
 	return resistivity * length / area
-}
-
-//Joule Heating, check for more information https://en.wikipedia.org/wiki/Joule_heating
-func JouleHeating(resistance, currentIntensity float64) (power float64) {
-	return resistance * (currentIntensity * currentIntensity)
 }
 
 //Drift Speed, check for more information https://en.wikipedia.org/wiki/Drift_velocity
