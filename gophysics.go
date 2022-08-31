@@ -122,3 +122,33 @@ func PotentialGravEner2(mass1, mass2, distance float64) float64 {
 func EscapeSpeed(mass, radius float64) float64 {
 	return math.Pow((2*G*mass)/(radius), 0.5)
 }
+
+//Gay-Lussac first law  (Volume variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
+func LawGayLussacVolume(volume, celsiusDeg_Temperature float64) float64 {
+	return volume * (1 + (1/273)*(celsiusDeg_Temperature))
+}
+
+//Gay-Lussac second law (Pressure Variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
+func LawGayLussacPressure(pressure, celsiusDeg_Temperature float64) float64 {
+	return pressure * (1 + (1/273)*(celsiusDeg_Temperature))
+}
+
+//Rate of Heat Flow, check for more information https://en.wikipedia.org/wiki/Rate_of_heat_flow
+func HeatFLowRate(termicConducibility, area, kelvinDeg_HeatVariation, time, width float64) float64 {
+	return -1 * (termicConducibility * area * kelvinDeg_HeatVariation * time) / (width)
+}
+
+//Heat Flux, check for more information https://en.wikipedia.org/wiki/Thermal_conductivity
+func HeatFlux(thermalConductivityConstant, startingTemperatureKelvin, finalTemperatureKelvin, distance float64) float64 {
+	return -1 * thermalConductivityConstant * (finalTemperatureKelvin - startingTemperatureKelvin) / distance
+}
+
+//Doppler effect (when listener is getting closer to the sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
+func DopplerCloser(speed, frequence float64) float64 {
+	return (1 + (speed / 340)) * frequence
+}
+
+//Doppler effect (when listener is getting far away from sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
+func DopplerFarer(speed, frequence float64) float64 {
+	return (1 - (speed / 340)) * frequence
+}
