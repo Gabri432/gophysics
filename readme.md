@@ -1,7 +1,7 @@
 # gophysics
 A set of some of the most common physics formulas and constants.
 
-## Which formulas are containend?
+## Which formulas are contained?
 ### Classical mechanics
 - Force, Speed, Time, Work, Acceleration, Density, Intensity, Power, Momentum
 - Potential Energy, Mechanical Energy, Kinetic Energy
