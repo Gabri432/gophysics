@@ -133,9 +133,9 @@ func LawGayLussacPressure(pressure, celsiusDeg_Temperature float64) float64 {
 	return pressure * (1 + (1/273)*(celsiusDeg_Temperature))
 }
 
-//Rate of Heat Flow, check for more information https://en.wikipedia.org/wiki/Rate_of_heat_flow
-func HeatFLowRate(termicConducibility, area, kelvinDeg_HeatVariation, time, width float64) float64 {
-	return -1 * (termicConducibility * area * kelvinDeg_HeatVariation * time) / (width)
+//Net Heat Energy Transfer, check for more information https://en.wikipedia.org/wiki/Rate_of_heat_flow
+func NetHeatEnergyTransfer(thermalConductivityConstant, area, kelvinDeg_HeatVariation, time, width float64) float64 {
+	return -1 * (thermalConductivityConstant * area * kelvinDeg_HeatVariation * time) / (width)
 }
 
 //Heat Flux, check for more information https://en.wikipedia.org/wiki/Thermal_conductivity
