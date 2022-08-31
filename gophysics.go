@@ -62,12 +62,12 @@ func Intensity(power, area float64) float64 {
 	return power / area
 }
 
-//Potential Energy is the product between
+//Potential Energy is the product between mass, mass acceleration and height
 func PotentialEner(mass, acceleration, height float64) float64 {
 	return mass * acceleration * height
 }
 
-//Kinetic Energy is the product between
+//Kinetic Energy is the product between half the mass and the square speed
 func KineticEner(mass, speed float64) float64 {
 	return (1 / 2) * mass * (speed * speed)
 }
