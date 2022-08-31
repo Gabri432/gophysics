@@ -5,8 +5,7 @@ const (
 	GRAVITY = 9.81
 
 	//Light speed on vacuum in meters per second.
-	C           = 299792452
-	LIGHT_SPEED = C
+	C, LIGHT_SPEED = 299792452, C
 
 	//Distance Moon-Earth in meters
 	LUNARDIST = 384_000_000
@@ -88,8 +87,8 @@ const (
 	//Coulomb constant in [Newton × (meters^2) / (Coulomb^2)]
 	COULOMB = 8.988e9
 
-	//Dielectric constant on void in [Faraday/meters]
-	DIELECTRIC = 8.854e-12
+	//Dielectric constant in vacuum in [Faraday/meters]
+	VACUUM_PERMITTIVITY, E_0, DIELECTRIC = 8.854e-12, VACUUM_PERMITTIVITY, VACUUM_PERMITTIVITY
 
 	//Elementary Charge in Coulomb
 	ELEM_CHARGE = 1.602e-19
