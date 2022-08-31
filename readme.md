@@ -11,7 +11,7 @@ A set of some of the most common physics formulas and constants.
 - Escape Speed
 
 ### Fluids
-- Legge di Stokes, legge di Hagen-Poiseuille
+- Stokes's Law, Hagen-Poiseuille's Law
 
 ### ElectroMagnetism
 - Ohm's Law, Capacitance, Voltage, Coulomb's Law, Doppler Effect, Energy Density
