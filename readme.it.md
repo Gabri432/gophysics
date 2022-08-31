@@ -21,3 +21,28 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 ### Relatività
 - Fattore di Lorentz, Tempo, Distanza, Massa e Momento relativistici
 - Effetto fotoelettrico, velocità di Deriva.
+
+
+## Come si usa
+- Scarica 
+```
+go get github.com/Gabri432/gophysics
+```
+
+- Esempio di utilizzo
+```
+package main
+
+import (
+    "fmt"
+    "github.com/Gabri432/gophysics
+)
+
+func main() {
+    fmt.Println(gophysics.C)
+}
+
+=== Output ===
+299792453  
+
+```

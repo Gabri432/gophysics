@@ -22,3 +22,28 @@ A set of some of the most common physics formulas and constants.
 ### Relativity
 - Lorentz Factor, Relativistic Time, Relativistic Distance, Relativstic Mass, Relativistic Momentum
 - Photoelettric Effect, Drift Speed.
+
+
+## How to use it
+- Download 
+```
+go get github.com/Gabri432/gophysics
+```
+
+- Example of usage
+```
+package main
+
+import (
+    "fmt"
+    "github.com/Gabri432/gophysics
+)
+
+func main() {
+    fmt.Println(gophysics.C)
+}
+
+=== Output ===
+299792453  
+
+```
