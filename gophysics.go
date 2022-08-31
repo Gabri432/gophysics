@@ -94,12 +94,12 @@ func PotentialElasticEner(elasticConstant, distance float64) float64 {
 }
 
 //Hagen-Poiseuille law, check for more information https://en.wikipedia.org/wiki/Hagen%E2%80%93Poiseuille_equation
-func LawHagenPoiseuille(tubeRadius, pressureGradient, fluidViscosity, tubeLength float64) float64 {
-	return ((3.14159 * math.Pow(tubeRadius, 4)) / (8 * fluidViscosity * tubeLength)) * pressureGradient
+func LawHagenPoiseuille(fluidViscosity, pipeLength, flowRate, pipeRadius float64) (pressureDifference float64) {
+	return ((8 * fluidViscosity * pipeLength * flowRate) / (3.14159 * math.Pow(pipeRadius, 4)))
 }
 
 //Stokes law, check for more information https://en.wikipedia.org/wiki/Stokes%27_law
-func LawStokes(fluidViscosity, radius, speed float64) float64 {
+func LawStokes(fluidViscosity, radius, speed float64) (force float64) {
 	return 6 * 3.14159 * fluidViscosity * radius * speed
 }
 
@@ -179,7 +179,7 @@ func Voltage(charge, distance1, distance2 float64) float64 {
 }
 
 //Conductor capacitance, check for more information https://en.wikipedia.org/wiki/Capacitance
-func SelfCapacitance(charge, potential float64) float64 {
+func SelfCapacitance(charge, potential float64) (coulombPotential float64) {
 	return charge / potential
 }
 
@@ -203,57 +203,47 @@ func LawOhm2(resistivity, length, area float64) (electricalResistance float64) {
 	return resistivity * length / area
 }
 
-//Joule law
-func LawJoule(resistance, currentIntensity float64) float64 {
+//Joule Heating, check for more information https://en.wikipedia.org/wiki/Joule_heating
+func JouleHeating(resistance, currentIntensity float64) (power float64) {
 	return resistance * (currentIntensity * currentIntensity)
 }
 
-//Magnetic Induction module
-func MagneticInduct(magneticForce, currentIntensity, length float64) float64 {
-	return magneticForce / (currentIntensity * length)
+//Drift Speed, check for more information https://en.wikipedia.org/wiki/Drift_velocity
+func DriftSpeed(intensity, chargeCarrierDensity, area, particleCharge float64) (driftVelocity float64) {
+	return intensity / (chargeCarrierDensity * area * particleCharge)
 }
 
-//Ampere law
-func LawAmpere(currentInt1, currentInt2, length, distance float64) float64 {
-	return (PROPORTION_CONST * currentInt1 * currentInt2 * length) / distance
+//Energetic Density Mean, check for more information https://en.wikipedia.org/wiki/Energy_density
+func EnergyDensity(electricField, magneticField float64) float64 {
+	return (1/2)*DIELECTRIC*(electricField*electricField) + (1/(2*VACUUM_PERMEABILITY))*(magneticField*magneticField)
 }
 
-//Energetic Density Mean
-func EnergDensM(wavingElectricFieldWidth float64) float64 {
-	return (1 / 2) * DIELECTRIC * (wavingElectricFieldWidth * wavingElectricFieldWidth)
-}
-
-//Relativistic time (Expansion of times)
-func RelativTime(travelerTime, speed float64) float64 {
+//Relativistic time (Time dilatation), check for more information https://en.wikipedia.org/wiki/Time_dilation
+func RelativTime(travelerTime, speed float64) (movingObserverTime float64) {
 	return travelerTime / (math.Pow(1-((speed*speed)/(C*C)), 0.5))
 }
 
-//Lorentz factor
-func LorentzFactor(speed float64) float64 {
+//Lorentz factor, check for more information https://en.wikipedia.org/wiki/Lorentz_factor
+func LorentzFactor(speed float64) (lorentzFactor float64) {
 	return 1 / (math.Pow(1-((speed*speed)/(C*C)), 0.5))
 }
 
-//Relativistic distance (Compression of distances)
-func RelativDist(nonTravelerDistance, speed float64) float64 {
+//Relativistic distance (Compression of distances), check for more information https://en.wikipedia.org/wiki/Proper_length
+func RelativDist(nonTravelerDistance, speed float64) (contractedDistance float64) {
 	return (math.Pow(1-((speed*speed)/(C*C)), 0.5)) * nonTravelerDistance
 }
 
-//Relativistic Mass (Increment of Mass)
-func RelativMass(travelerMass, speed float64) float64 {
+//Relativistic Mass (Increment of Mass), check for more information https://en.wikipedia.org/wiki/Mass_in_special_relativity
+func RelativMass(travelerMass, speed float64) (relativisticMass float64) {
 	return travelerMass / (math.Pow(1-((speed*speed)/(C*C)), 0.5))
 }
 
-//Relativistic Momentum (Increment of Momentum)
-func RelativMomen(travelerMomentum, speed float64) float64 {
+//Relativistic Momentum (Increment of Momentum), check for more information https://en.wikipedia.org/wiki/Energy%E2%80%93momentum_relation
+func RelativMomentum(travelerMomentum, speed float64) (relativisticMomentum float64) {
 	return (travelerMomentum * speed) / (math.Pow(1-((speed*speed)/(C*C)), 0.5))
 }
 
-//Relative Energy
-func RelativEnerg(travelerEnergy, speed float64) float64 {
-	return (travelerEnergy * (C * C)) / (math.Pow(1-((speed*speed)/(C*C)), 0.5))
-}
-
-//Quantic energy
-func QuanticEn(frequence float64) float64 {
+//Photoelettric effect, check for more information https://en.wikipedia.org/wiki/Photoelectric_effect
+func PhotoElettricEffect(frequence float64) (energy float64) {
 	return PLANCK * frequence
 }

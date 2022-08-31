@@ -90,6 +90,9 @@ const (
 	//Dielectric constant in vacuum in [Faraday/meters]
 	VACUUM_PERMITTIVITY, E_0, DIELECTRIC = 8.854e-12, VACUUM_PERMITTIVITY, VACUUM_PERMITTIVITY
 
+	//Vacuum Permability in Henry units per meter, or Newtons per square Ampere
+	VACUUM_PERMEABILITY = 1.256637e-6
+
 	//Elementary Charge in Coulomb
 	ELEM_CHARGE = 1.602e-19
 
