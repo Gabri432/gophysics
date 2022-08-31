@@ -47,5 +47,18 @@ func main() {
 
 ```
 
+
+## Struttura del progetto
+### File
+- `gophysics.go`, non fornisce alcuna formula, ma diverse funzioni per semplificare alcune operazioni.
+- `classical.go`, dove tutte le formule di FIsica Classica sono presenti.
+- `fluids.go`, dove tutte le formule sui Fluidi sono presenti.
+- `gravity.go`, dove tutte le formule sulla Gravità sono presenti.
+- `thermodinamics.go`, dove tutte le formule sulla Termodinamica sono presenti.
+- `electromagnetism.go`, dove tutte le formule sull'Elettromagnetismo sono presenti.
+- `relativity.go`, dove tutte le formule sulla Relatività sono presenti.
+- `constants.go`, dove tutte le costanti sono presenti.
+- `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
+
 ## Nota bene
 - Le formule sono state prese dal seguente libro : Titolo - "Fisica volume 1", Autori - ["Paolo Mazzoldi", "Massimo Nigro", "Cesare Voci"].

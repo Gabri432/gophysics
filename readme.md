@@ -48,5 +48,17 @@ func main() {
 
 ```
 
+## Project Structure
+### Files
+- `gophysics.go`, doesn't provide formulas, but other functions to simplify some actions.
+- `classical.go`, where all the Classical physics formulas are located.
+- `fluids.go`, where all the Fluid formulas are located.
+- `gravity.go`, where all the Gravity formulas are located.
+- `thermodinamics.go`, where all the Thermodinamics formulas are located.
+- `electromagnetism.go`, where all the Electromagnetism formulas are located.
+- `relativity.go`, where all the Relativity formulas are located.
+- `constants.go`, where all the constants are located.
+- `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
+
 ## Notes
 - Formulas were taken from this italian book: Title - "Fisica Volume 1", Authors - ["Paolo Mazzoldi", "Massimo Nigro", "Cesare Voci"].
