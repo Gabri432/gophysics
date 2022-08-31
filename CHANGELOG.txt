@@ -1,0 +1,4 @@
+31/08/2022
+
+v0.9.4
+PATCH - Fixing grammar error in readme.md
