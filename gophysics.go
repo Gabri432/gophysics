@@ -1,4 +1,6 @@
-// A package that provides different functions for making some of the most common calculation in Physics.
+// A package that provides different functions and constants for making some of the most common calculation in Physics.
+//
+// Gravity, Fluids, Termodinamics, Relativity are the most covered areas.
 //
 // As so this package does not claim to be the most extensive or the best one, but it is thought as a useful tool for the most common cases.
 //
@@ -6,7 +8,7 @@
 //
 // Also If you enjoyed using this program consider putting a star in the github repository at  https://github.com/Gabri432/gophysics.
 //
-// The package is under the MIT License https://github.com/Gabri432/gophysics/blob/master/license
+// The package is under the MIT License https://github.com/Gabri432/gophysics/blob/master/license.
 //
 // Thank you!! :)
 package gophysics
