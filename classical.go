@@ -55,7 +55,7 @@ func Momentum(mass, speed float64) float64 {
 	return mass * speed
 }
 
-//Power is the power/area ratio
+//Power is the work/time ratio
 func Power(work, time float64) float64 {
 	return work / time
 }
