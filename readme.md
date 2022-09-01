@@ -60,5 +60,8 @@ func main() {
 - `constants.go`, where all the constants are located.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
 
+## Contributing to this project
+- If you want to add a feature or making a fix check out this page explaining how to do it: [Contributing to gophysics](https://github.com/Gabri432/gophysics/blob/master/.github/CONTRIBUTING.md)
+
 ## Notes
 - Formulas were taken from this italian book: Title - "Fisica Volume 1", Authors - ["Paolo Mazzoldi", "Massimo Nigro", "Cesare Voci"].

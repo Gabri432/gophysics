@@ -60,5 +60,8 @@ func main() {
 - `constants.go`, dove tutte le costanti sono presenti.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
 
+## Contribuire al progetto
+- Se vuoi aggiungere una feature o fare un aggiustamento fai un giro in questa pagina su come fare: [Contribuire a gophysics](https://github.com/Gabri432/gophysics/blob/master/.github/CONTRIBUTING.it.md)
+
 ## Nota bene
 - Le formule sono state prese dal seguente libro : Titolo - "Fisica volume 1", Autori - ["Paolo Mazzoldi", "Massimo Nigro", "Cesare Voci"].
