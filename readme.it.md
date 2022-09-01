@@ -1,6 +1,7 @@
 # gophysics
 ![GitHub](https://img.shields.io/github/license/Gabri432/gophysics)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/Gabri432/gophysics)
+
 Una collezione di alcune delle formule e costanti più comuni in fisica.
 
 ## Quali formule sono contenute?
