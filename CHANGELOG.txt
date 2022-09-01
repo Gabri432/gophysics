@@ -1,5 +1,8 @@
 1/09/2022
 
+v0.10.2
+PATCH - Fixing missing descriptions for MechanicalEner and Momentum functions.
+
 v0.10.1
 PATCH - Fixing wrong description for Power function.
 

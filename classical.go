@@ -45,12 +45,12 @@ func KineticEner(mass, speed float64) float64 {
 	return (1 / 2) * mass * (speed * speed)
 }
 
-//Mechanic Energy formula
+//Mechanic Energy is the sum of Potential energy and kinetic energy, check for more information https://en.wikipedia.org/wiki/Mechanical_energy
 func MechanicalEner(potential, kinetic float64) float64 {
 	return potential + kinetic
 }
 
-//Momentum is the product between
+//Momentum is the product between mass and speed
 func Momentum(mass, speed float64) float64 {
 	return mass * speed
 }
