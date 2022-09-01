@@ -34,7 +34,7 @@ go get github.com/Gabri432/gophysics
 ```
 
 - Example of usage
-```
+```go
 package main
 
 import (
@@ -44,10 +44,12 @@ import (
 
 func main() {
     fmt.Println(gophysics.C)
+    fmt.Println(gophysics.Force(3, 4))
 }
 
 === Output ===
 299792453  
+12
 
 ```
 

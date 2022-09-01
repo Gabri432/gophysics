@@ -32,8 +32,9 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 go get github.com/Gabri432/gophysics
 ```
 
+
 - Esempio di utilizzo
-```
+```go
 package main
 
 import (
@@ -43,10 +44,12 @@ import (
 
 func main() {
     fmt.Println(gophysics.C)
+    fmt.Println(gophysics.Force(3, 4))
 }
 
 === Output ===
 299792453  
+12
 
 ```
 
