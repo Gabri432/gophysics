@@ -2,6 +2,19 @@ package gophysics
 
 import "math"
 
+// Defining a custom planet
+type PlanetBody struct {
+	Mass, Speed, Radius float64
+}
+
+func (p PlanetBody) GravField() float64 {
+	return GravField(p.Mass, p.Radius)
+}
+
+func (p PlanetBody) EscapeSpeed() float64 {
+	return EscapeSpeed(p.Mass, p.Radius)
+}
+
 //Potential Gravitational Energy, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
 func PotentialGravEner(mass, height float64) float64 {
 	return mass * GRAVITY * height
