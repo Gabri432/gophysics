@@ -22,17 +22,32 @@ func GaussFlux(charge float64) float64 {
 	return charge / VACUUM_PERMITTIVITY
 }
 
+//Electric Field, check for more information https://en.wikipedia.org/wiki/Electric_potential
+// or https://phys.libretexts.org/Bookshelves/College_Physics/Book%3A_College_Physics_(OpenStax)/19%3A_Electric_Potential_and_Electric_Field/19.01%3A_Electric_Potential_Energy-_Potential_Difference
+func ElectricField(charge, radius float64) float64 {
+	return (charge) / (4 * 3.1416 * VACUUM_PERMITTIVITY * radius * radius)
+}
+
 //Electric Potential on electric Field formula from a point-like charge, check for more information https://en.wikipedia.org/wiki/Electric_potential
+// or https://phys.libretexts.org/Bookshelves/College_Physics/Book%3A_College_Physics_(OpenStax)/19%3A_Electric_Potential_and_Electric_Field/19.01%3A_Electric_Potential_Energy-_Potential_Difference
 func ElectricPotential(charge, distance float64) float64 {
 	return (charge) / (4 * 3.1416 * VACUUM_PERMITTIVITY * distance)
 }
 
+//Electric Potential Energy Difference (do not confuse it with Voltage), check for more information https://en.wikipedia.org/wiki/Electric_potential_energy
+// or https://phys.libretexts.org/Bookshelves/College_Physics/Book%3A_College_Physics_(OpenStax)/19%3A_Electric_Potential_and_Electric_Field/19.01%3A_Electric_Potential_Energy-_Potential_Difference
+func ElectricPotentEnergyDiff(charge1, charge2, distance1, distance2 float64) float64 {
+	return ((charge1 * charge2) / (4 * 3.1416 * VACUUM_PERMITTIVITY)) * ((1 / distance1) - (1 / distance2))
+}
+
 //Electric Potential Difference, or Voltage, between two point from the charge position, check for more information https://en.wikipedia.org/wiki/Voltage
+// or https://phys.libretexts.org/Bookshelves/College_Physics/Book%3A_College_Physics_(OpenStax)/19%3A_Electric_Potential_and_Electric_Field/19.01%3A_Electric_Potential_Energy-_Potential_Difference
 func ElectricPotentDiff(charge, distance1, distance2 float64) float64 {
 	return (charge / (4 * 3.1416 * VACUUM_PERMITTIVITY)) * ((1 / distance1) - (1 / distance2))
 }
 
 //Voltage, or Electric Potential Difference, between two point from the charge position, check for more information https://en.wikipedia.org/wiki/Voltage
+// or https://phys.libretexts.org/Bookshelves/College_Physics/Book%3A_College_Physics_(OpenStax)/19%3A_Electric_Potential_and_Electric_Field/19.01%3A_Electric_Potential_Energy-_Potential_Difference
 func Voltage(charge, distance1, distance2 float64) float64 {
 	return ElectricPotentDiff(charge, distance1, distance2)
 }
