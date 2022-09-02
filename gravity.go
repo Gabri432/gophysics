@@ -2,9 +2,9 @@ package gophysics
 
 import "math"
 
-// Defining a custom planet
+// Defining a custom planet with its own mass and radius
 type PlanetBody struct {
-	Mass, Speed, Radius float64
+	Mass, Radius float64
 }
 
 func (p PlanetBody) GravField() float64 {
