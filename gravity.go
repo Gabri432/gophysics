@@ -7,10 +7,12 @@ type PlanetBody struct {
 	Mass, Radius float64
 }
 
+// Calculates gravity field
 func (p PlanetBody) GravField() float64 {
 	return GravField(p.Mass, p.Radius)
 }
 
+// Calculate escape velocity
 func (p PlanetBody) EscapeSpeed() float64 {
 	return EscapeSpeed(p.Mass, p.Radius)
 }
