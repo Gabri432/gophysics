@@ -94,3 +94,8 @@ func Power(work, time float64) float64 {
 func PotentialElasticEner(elasticConstant, distance float64) float64 {
 	return (1 / 2) * elasticConstant * (distance * distance)
 }
+
+//Frequency is the speed/distance ratio
+func Frequency(speed, distance float64) float64 {
+	return speed / distance
+}
