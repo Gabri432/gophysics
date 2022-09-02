@@ -1,5 +1,35 @@
 package gophysics
 
+// Defining custom body with its own mass, speed, volume
+type Body struct {
+	Mass, Speed, Volume float64
+}
+
+//Force is the product between mass and acceleration
+func (b Body) Force(acceleration float64) float64 {
+	return Force(b.Mass, acceleration)
+}
+
+//Acceleration is the force/mass ratio
+func (b Body) Acceleration(force float64) float64 {
+	return Acceleration(force, b.Mass)
+}
+
+//Density is the weight/volume ratio
+func (b Body) Density() float64 {
+	return Density(b.Mass, b.Volume)
+}
+
+//Potential Energy is the product between mass, mass acceleration and height
+func (b Body) PotentialEner(acceleration, height float64) float64 {
+	return PotentialEner(b.Mass, acceleration, height)
+}
+
+//Kinetic Energy is the product between half the mass and the square speed
+func (b Body) KineticEner() float64 {
+	return KineticEner(b.Mass, b.Speed)
+}
+
 //Force is the product between mass and acceleration
 func Force(mass, acceleration float64) float64 {
 	return mass * acceleration
