@@ -2,6 +2,23 @@ package gophysics
 
 import "math"
 
+// Defining custom ChargeBody with its own charge, radius, distance from another charge
+type ChargeBody struct {
+	Charge, Radius, Distance float64
+}
+
+func (c ChargeBody) ElectricField() float64 {
+	return ElectricField(c.Charge, c.Radius)
+}
+
+func (c ChargeBody) ElectricPotential() float64 {
+	return ElectricPotential(c.Charge, c.Radius)
+}
+
+func (c ChargeBody) ElectricPotentDiff(distance2 float64) float64 {
+	return ElectricPotentDiff(c.Charge, c.Distance, distance2)
+}
+
 //Doppler effect (when listener is getting closer to the sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
 func DopplerCloser(speed, frequence float64) float64 {
 	return (1 + (speed / 340)) * frequence
