@@ -6,23 +6,23 @@ type GasBody struct {
 }
 
 // Gay-Lussac first law  (Volume variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
-func (g GasBody) LawGayLussacVolume() float64 {
+func (g GasBody) LawGayLussacVolume() (value float64, measurementUnit string) {
 	return LawGayLussacVolume(g.Volume, g.TemperatureCelsius)
 }
 
 // Gay-Lussac second law  (Volume variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
-func (g GasBody) LawGayLussacPressure() float64 {
+func (g GasBody) LawGayLussacPressure() (value float64, measurementUnit string) {
 	return LawGayLussacPressure(g.Pressure, g.TemperatureCelsius)
 }
 
 // Gay-Lussac first law  (Volume variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
-func LawGayLussacVolume(volume, celsiusDeg_Temperature float64) float64 {
-	return volume * (1 + (1/273)*(celsiusDeg_Temperature))
+func LawGayLussacVolume(volume, celsiusDeg_Temperature float64) (value float64, measurementUnit string) {
+	return volume * (1 + (1/273)*(celsiusDeg_Temperature)), "m^3"
 }
 
 // Gay-Lussac second law (Pressure Variation), check for more information https://en.wikipedia.org/wiki/Gay-Lussac%27s_law
-func LawGayLussacPressure(pressure, celsiusDeg_Temperature float64) float64 {
-	return pressure * (1 + (1/273)*(celsiusDeg_Temperature))
+func LawGayLussacPressure(pressure, celsiusDeg_Temperature float64) (value float64, measurementUnit string) {
+	return pressure * (1 + (1/273)*(celsiusDeg_Temperature)), "Pascal"
 }
 
 // Net Heat Energy Transfer, check for more information https://en.wikipedia.org/wiki/Rate_of_heat_flow
@@ -36,11 +36,11 @@ func HeatFlux(thermalConductivityConstant, startingTemperatureKelvin, finalTempe
 }
 
 // Joule Heating, or Resistance, check for more information https://en.wikipedia.org/wiki/Joule_heating
-func JouleHeating(resistance, currentIntensity float64) (power float64) {
-	return resistance * (currentIntensity * currentIntensity)
+func JouleHeating(resistance, currentIntensity float64) (power float64, measurementUnit string) {
+	return resistance * (currentIntensity * currentIntensity), "W"
 }
 
 // Resistance, or Joule Heating, check for more information https://en.wikipedia.org/wiki/Joule_heating
-func Resistance(resistance, currentIntensity float64) (power float64) {
+func Resistance(resistance, currentIntensity float64) (power float64, measurementUnit string) {
 	return JouleHeating(resistance, currentIntensity)
 }
