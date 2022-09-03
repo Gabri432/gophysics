@@ -48,16 +48,16 @@ import (
 )
 
 func main() {
-    fmt.Println(gophysics.C)
-    fmt.Println(gophysics.Force(3, 4))
-    myPlanet := gophysics.PlanetBody{Mass: 5.98e24, Radius: 6.307e6}
-	fmt.Println(myPlanet.EscapeSpeed())
+    fmt.Println(gophysics.C)   <<< Write a constant
+    fmt.Println(gophysics.Force(3, 4))   <<< Call a function
+    myPlanet := gophysics.PlanetBody{Mass: gophysics.EARTH_MASS, Radius: gophysics.EARTH_RADIUS} <<< Create a custom object
+	fmt.Println(myPlanet.EscapeSpeed())  <<< Call object methods to ease some calculations
 }
 
 === Output ===
 299792453  
 12
-11246.492327044909
+11183.719071923773
 
 ```
 
