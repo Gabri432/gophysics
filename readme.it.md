@@ -7,7 +7,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 ## Quali formule sono contenute?
 ### Meccanica Classica
 - Forza, Velocità, Tempo, Lavoro, Accelerazione, Densità, Intensità, Potenza, Momento
-- Energia Potenziale, Meccanica, Cinetica
+- Energia Potenziale, Meccanica, Cinetica, Frequenza.
 ### Gravità
 - Energia potenziale Gravitazionale, Legge di Gravitazione Universale, Campo gravitazionale
 - Velocità di fuga
@@ -17,6 +17,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 
 ### Elettromagnetismo
 - Legge di Ohm, Capacità di un Conduttore, legge di Coulomb, Effetto Doppler, Densità di energia.
+- Campo Elettrico, Differenza di Energia Potenziale Elettrica.
 
 ### Termodinamica
 - Legge di Gay-Lussac, Energia di calore netta, Flusso di calore, FLusso del campo elettrico, Calore di Joule
@@ -39,17 +40,20 @@ package main
 
 import (
     "fmt"
-    "github.com/Gabri432/gophysics
+    "github.com/Gabri432/gophysics"
 )
 
 func main() {
     fmt.Println(gophysics.C)
     fmt.Println(gophysics.Force(3, 4))
+    myPlanet := gophysics.PlanetBody{Mass: 5.98e24, Radius: 6.307e6}
+	fmt.Println(myPlanet.EscapeSpeed())
 }
 
 === Output ===
 299792453  
 12
+11246.492327044909
 
 ```
 

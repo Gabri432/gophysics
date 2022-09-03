@@ -7,7 +7,7 @@ A set of some of the most common physics formulas and constants.
 ## Which formulas are contained?
 ### Classical mechanics
 - Force, Speed, Time, Work, Acceleration, Density, Intensity, Power, Momentum
-- Potential Energy, Mechanical Energy, Kinetic Energy
+- Potential Energy, Mechanical Energy, Kinetic Energy, Frequency
 
 ### Gravity
 - Potential Gravitational Energy, Universal Gravitational Law, Gravitational Field
@@ -18,6 +18,7 @@ A set of some of the most common physics formulas and constants.
 
 ### ElectroMagnetism
 - Ohm's Law, Capacitance, Voltage, Coulomb's Law, Doppler Effect, Energy Density
+- Electric Field, Eletric Potential Energy Difference.
 
 ### Termodinamics
 - Gay-Lussac's Law, Net Heat Energy, Heat Flux, Eletric Field Flux, Joule Heating
@@ -39,17 +40,20 @@ package main
 
 import (
     "fmt"
-    "github.com/Gabri432/gophysics
+    "github.com/Gabri432/gophysics"
 )
 
 func main() {
     fmt.Println(gophysics.C)
     fmt.Println(gophysics.Force(3, 4))
+    myPlanet := gophysics.PlanetBody{Mass: 5.98e24, Radius: 6.307e6}
+	fmt.Println(myPlanet.EscapeSpeed())
 }
 
 === Output ===
 299792453  
 12
+11246.492327044909
 
 ```
 
