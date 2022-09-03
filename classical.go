@@ -1,5 +1,7 @@
 package gophysics
 
+import "math"
+
 // Defining custom body with its own mass, speed, volume
 type Body struct {
 	Mass, Speed, Volume float64
@@ -113,4 +115,9 @@ func DopplerFarer(speed, frequence float64) (frequency float64, measurementUnit 
 //Angular Frequency is the radiant/time ratio
 func AngularFreq(time float64) (value float64, measurementUnit string) {
 	return (2 * 3.1416) / time, "rad/s"
+}
+
+//Normal Force is the product between the mass, gravitational attracion field, angle cosine of the object.
+func NormalForce(mass, angleInDeg float64) (force float64, measurementUnit string) {
+	return mass * math.Cos(angleInDeg*57.2958), "N"
 }
