@@ -99,3 +99,13 @@ func PotentialElasticEner(elasticConstant, distance float64) (value float64, mea
 func Frequency(speed, distance float64) (value float64, measurementUnit string) {
 	return speed / distance, "hertz"
 }
+
+//Doppler effect (when listener is getting closer to the sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
+func DopplerCloser(speed, frequence float64) (frequency float64, measurementUnit string) {
+	return (1 + (speed / 340)) * frequence, "hertz"
+}
+
+//Doppler effect (when listener is getting far away from sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
+func DopplerFarer(speed, frequence float64) (frequency float64, measurementUnit string) {
+	return (1 - (speed / 340)) * frequence, "hertz"
+}

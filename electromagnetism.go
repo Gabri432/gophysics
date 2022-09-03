@@ -19,16 +19,6 @@ func (c ChargeBody) ElectricPotentDiff(distance2 float64) (value float64, measur
 	return ElectricPotentDiff(c.Charge, c.Distance, distance2)
 }
 
-//Doppler effect (when listener is getting closer to the sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
-func DopplerCloser(speed, frequence float64) (frequency float64, measurementUnit string) {
-	return (1 + (speed / 340)) * frequence, "hertz"
-}
-
-//Doppler effect (when listener is getting far away from sound source), check for more information https://en.wikipedia.org/wiki/Doppler_effect
-func DopplerFarer(speed, frequence float64) (frequency float64, measurementUnit string) {
-	return (1 - (speed / 340)) * frequence, "hertz"
-}
-
 //Coulomb law formula, check for more information https://en.wikipedia.org/wiki/Coulomb%27s_law
 func LawCoulomb(charge1, charge2, distance float64) (electroStaticForce float64) {
 	return COULOMB * (math.Abs(charge1) * math.Abs(charge2)) / (distance * distance)
