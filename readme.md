@@ -25,7 +25,7 @@ A set of some of the most common physics formulas and constants.
 - Ohm's Law, Capacitance, Voltage, Coulomb's Law, Energy Density
 - Electric Field, Eletric Potential Energy Difference.
 
-### Termodinamics
+### Termodynamics
 - Gay-Lussac's Law, Net Heat Energy, Heat Flux, Eletric Field Flux, Joule Heating
 
 ### Relativity
