@@ -69,7 +69,7 @@ func SelfCapacitanceSphere(radius float64) (coulombPotential float64, measuremen
 	return 4 * 3.14159 * VACUUM_PERMITTIVITY * radius, "C/V"
 }
 
-//Density of energy of ElectroStatic Field, check for more information https://en.wikipedia.org/wiki/Electric_potential_energy
+//Density of energy of Electric Field, check for more information https://en.wikipedia.org/wiki/Electric_potential_energy
 func EnergyDens(electricFieldModule float64) (value float64, measurementUnit string) {
 	return (1 / 2) * VACUUM_PERMITTIVITY * (electricFieldModule * electricFieldModule), "J/m^3"
 }
@@ -85,11 +85,11 @@ func LawOhm2(resistivity, length, area float64) (electricalResistance float64) {
 }
 
 //Drift Speed, check for more information https://en.wikipedia.org/wiki/Drift_velocity
-func DriftSpeed(intensity, chargeCarrierDensity, area, particleCharge float64) (driftVelocity float64) {
-	return intensity / (chargeCarrierDensity * area * particleCharge)
+func DriftSpeed(intensity, chargeCarrierDensity, area, particleCharge float64) (driftVelocity float64, measurementUnit string) {
+	return intensity / (chargeCarrierDensity * area * particleCharge), "m/s"
 }
 
 //Energy Density of electric and magnetic fields, check for more information https://en.wikipedia.org/wiki/Energy_density
-func EnergyDensity(electricField, magneticField float64) float64 {
-	return (1/2)*DIELECTRIC*(electricField*electricField) + (1/(2*VACUUM_PERMEABILITY))*(magneticField*magneticField)
+func EnergyDensity(electricField, magneticField float64) (value float64, measurementUnit string) {
+	return (1/2)*DIELECTRIC*(electricField*electricField) + (1/(2*VACUUM_PERMEABILITY))*(magneticField*magneticField), "J/m^3"
 }
