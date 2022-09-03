@@ -31,11 +31,16 @@ func NetHeatEnergyTransfer(thermalConductivityConstant, area, kelvinDeg_HeatVari
 }
 
 // Heat Flux, check for more information https://en.wikipedia.org/wiki/Thermal_conductivity
-func HeatFlux(thermalConductivityConstant, startingTemperatureKelvin, finalTemperatureKelvin, distance float64) float64 {
-	return -1 * thermalConductivityConstant * (finalTemperatureKelvin - startingTemperatureKelvin) / distance
+func HeatFlux(thermalConductivityConstant, startingTemperatureKelvin, finalTemperatureKelvin, distance float64) (value float64, measurementUnit string) {
+	return -1 * thermalConductivityConstant * (finalTemperatureKelvin - startingTemperatureKelvin) / distance, "W"
 }
 
-// Joule Heating, check for more information https://en.wikipedia.org/wiki/Joule_heating
+// Joule Heating, or Resistance, check for more information https://en.wikipedia.org/wiki/Joule_heating
 func JouleHeating(resistance, currentIntensity float64) (power float64) {
 	return resistance * (currentIntensity * currentIntensity)
+}
+
+// Resistance, or Joule Heating, check for more information https://en.wikipedia.org/wiki/Joule_heating
+func Resistance(resistance, currentIntensity float64) (power float64) {
+	return JouleHeating(resistance, currentIntensity)
 }
