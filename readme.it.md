@@ -56,8 +56,8 @@ func main() {
 
 === Output ===
 299792453  
-12
-11183.719071923773
+12 N      <<< Quando si chiamano le funzioni queste ritornano un valore e la unità di misura.
+11183.719071923773 m/s
 
 ```
 
