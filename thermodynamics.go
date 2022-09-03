@@ -44,3 +44,8 @@ func JouleHeating(resistance, currentIntensity float64) (power float64, measurem
 func Resistance(resistance, currentIntensity float64) (power float64, measurementUnit string) {
 	return JouleHeating(resistance, currentIntensity)
 }
+
+//Pressure is the normal force/area ratio, check for more information https://en.wikipedia.org/wiki/Pressure
+func Pressure(normalForce, area float64) (value float64, measurementUnit string) {
+	return normalForce / area, "Pascal"
+}
