@@ -1,3 +1,11 @@
+2/09/2022
+
+v0.11
+ADDED - Creating new custom type structs [Body, ChargeBody, PlanetBody, GasBody] to access more easily some functions.
+ADDED - New formulas added: ElectricField, ElectricPotentEnergyDifference, Frequency .
+PATCH - Renaming file 'thermodinamics' in 'thermodynamics'.
+
+
 1/09/2022
 
 v0.10.2
