@@ -109,3 +109,8 @@ func DopplerCloser(speed, frequence float64) (frequency float64, measurementUnit
 func DopplerFarer(speed, frequence float64) (frequency float64, measurementUnit string) {
 	return (1 - (speed / 340)) * frequence, "hertz"
 }
+
+//Angular Frequency is the radiant/time ratio
+func AngularFreq(time float64) (value float64, measurementUnit string) {
+	return (2 * 3.1416) / time, "rad/s"
+}
