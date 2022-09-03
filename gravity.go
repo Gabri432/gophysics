@@ -8,36 +8,36 @@ type PlanetBody struct {
 }
 
 // Calculates gravity field
-func (p PlanetBody) GravField() float64 {
+func (p PlanetBody) GravField() (value float64, measurementUnit string) {
 	return GravField(p.Mass, p.Radius)
 }
 
 // Calculate escape velocity
-func (p PlanetBody) EscapeSpeed() float64 {
+func (p PlanetBody) EscapeSpeed() (value float64, measurementUnit string) {
 	return EscapeSpeed(p.Mass, p.Radius)
 }
 
 //Potential Gravitational Energy, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
-func PotentialGravEner(mass, height float64) float64 {
-	return mass * GRAVITY * height
+func PotentialGravEner(mass, height float64) (value float64, measurementUnit string) {
+	return mass * GRAVITY * height, "J"
 }
 
 //Universal Gravitational Law (Gravitational Attraction Law), check for more information https://en.wikipedia.org/wiki/Gravity
-func GravAttract(mass1, mass2, distance float64) float64 {
-	return (G * mass1 * mass2) / (distance * distance)
+func GravAttract(mass1, mass2, distance float64) (value float64, measurementUnit string) {
+	return (G * mass1 * mass2) / (distance * distance), "m/s^2"
 }
 
 //Gravitational Field of an object, check for more information https://en.wikipedia.org/wiki/Gravity
-func GravField(mass, distance float64) float64 {
-	return (G * mass) / (distance * distance)
+func GravField(mass, distance float64) (value float64, measurementUnit string) {
+	return (G * mass) / (distance * distance), "m/s^2"
 }
 
 //Potential Gravitatonal Energy between two masses, check for more information https://en.wikipedia.org/wiki/Gravitational_energy
-func PotentialGravEner2(mass1, mass2, distance float64) float64 {
-	return -1 * ((G * mass1 * mass2) / (distance))
+func PotentialGravEner2(mass1, mass2, distance float64) (value float64, measurementUnit string) {
+	return -1 * ((G * mass1 * mass2) / (distance)), "J"
 }
 
 //Escape Speed, check for more information https://en.wikipedia.org/wiki/Escape_velocity
-func EscapeSpeed(mass, radius float64) float64 {
-	return math.Pow((2*G*mass)/(radius), 0.5)
+func EscapeSpeed(mass, radius float64) (value float64, measurementUnit string) {
+	return math.Pow((2*G*mass)/(radius), 0.5), "m/s"
 }
