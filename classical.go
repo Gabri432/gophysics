@@ -119,5 +119,5 @@ func AngularFreq(time float64) (value float64, measurementUnit string) {
 
 //Normal Force is the product between the mass, gravitational attracion field, angle cosine of the object.
 func NormalForce(mass, angleInDeg float64) (force float64, measurementUnit string) {
-	return mass * math.Cos(angleInDeg*57.2958), "N"
+	return mass * math.Cos(angleInDeg/57.2958), "N"
 }
