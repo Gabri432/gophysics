@@ -1,6 +1,6 @@
 // A package that provides different functions and constants for making some of the most common calculation in Physics.
 //
-// Gravity, Fluids, Termodinamics, Relativity are the most covered areas.
+// Classical Physics, Gravity, Fluids, Termodynamics, Electromagnetism, Relativity are for now the covered areas.
 //
 // As so this package does not claim to be the most extensive or the best one, but it is thought as a useful tool for the most common cases.
 //
