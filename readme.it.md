@@ -11,7 +11,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 ## Quali formule sono contenute?
 ### Meccanica Classica
 - Forza, Velocità, Tempo, Lavoro, Accelerazione, Densità, Intensità, Potenza, Momento
-- Energia Potenziale, Meccanica, Cinetica, Frequenza.
+- Energia Potenziale, Meccanica, Cinetica, Frequenza, Effetto Doppler.
 ### Gravità
 - Energia potenziale Gravitazionale, Legge di Gravitazione Universale, Campo gravitazionale
 - Velocità di fuga
@@ -20,7 +20,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 - Legge di Stokes, legge di Hagen-Poiseuille
 
 ### Elettromagnetismo
-- Legge di Ohm, Capacità di un Conduttore, legge di Coulomb, Effetto Doppler, Densità di energia.
+- Legge di Ohm, Capacità di un Conduttore, legge di Coulomb, Densità di energia.
 - Campo Elettrico, Differenza di Energia Potenziale Elettrica.
 
 ### Termodinamica

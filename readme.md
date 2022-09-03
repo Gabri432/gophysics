@@ -11,7 +11,7 @@ A set of some of the most common physics formulas and constants.
 ## Which formulas are contained?
 ### Classical mechanics
 - Force, Speed, Time, Work, Acceleration, Density, Intensity, Power, Momentum
-- Potential Energy, Mechanical Energy, Kinetic Energy, Frequency
+- Potential Energy, Mechanical Energy, Kinetic Energy, Frequency, Doppler Effect
 
 ### Gravity
 - Potential Gravitational Energy, Universal Gravitational Law, Gravitational Field
@@ -21,7 +21,7 @@ A set of some of the most common physics formulas and constants.
 - Stokes's Law, Hagen-Poiseuille's Law
 
 ### ElectroMagnetism
-- Ohm's Law, Capacitance, Voltage, Coulomb's Law, Doppler Effect, Energy Density
+- Ohm's Law, Capacitance, Voltage, Coulomb's Law, Energy Density
 - Electric Field, Eletric Potential Energy Difference.
 
 ### Termodinamics
