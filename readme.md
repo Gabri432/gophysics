@@ -4,6 +4,10 @@
 
 A set of some of the most common physics formulas and constants.
 
+## Features
+- It provides Physics formulas and constants for calculation porpuses.
+- It allows to create some objects to simplify some calculations (see example).
+
 ## Which formulas are contained?
 ### Classical mechanics
 - Force, Speed, Time, Work, Acceleration, Density, Intensity, Power, Momentum
