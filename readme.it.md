@@ -47,14 +47,13 @@ package main
 import (
     "fmt"
     "github.com/Gabri432/gophysics/constants"
-    "github.com/Gabri432/gophysics/classical"
-    "github.com/Gabri432/gophysics/gravity"
+    "github.com/Gabri432/gophysics/formulas"
 )
 
 func main() {
     fmt.Println(constants.C)      <<< Scrivi una costante
-    fmt.Println(classical.Force(3, 4))   <<< Chiama una funzione
-    myPlanet := gravity.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS}  <<< Costrusci il tuo oggetto 
+    fmt.Println(formulas.Force(3, 4))   <<< Chiama una funzione
+    myPlanet := formulas.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS}  <<< Costrusci il tuo oggetto 
 	fmt.Println(myPlanet.EscapeSpeed())    <<< Chiama i suoi metodi per fare calcoli più comodamente.
 }
 
@@ -87,18 +86,15 @@ func main() {
 #### gophysics (main)
 - `gophysics.go`, non fornisce alcuna formula, ma diverse funzioni per semplificare alcune operazioni.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
-#### classical
+
+#### formulas
 - `classical.go`, dove tutte le formule di FIsica Classica sono presenti.
-#### fluids
 - `fluids.go`, dove tutte le formule sui Fluidi sono presenti.
-#### gravity
 - `gravity.go`, dove tutte le formule sulla Gravità sono presenti.
-#### thermodynamics
 - `thermodynamics.go`, dove tutte le formule sulla Termodinamica sono presenti.
-#### electromagnetism
 - `electromagnetism.go`, dove tutte le formule sull'Elettromagnetismo sono presenti.
-#### relativity
 - `relativity.go`, where all the Relativity formulas are located.
+
 #### constants
 - `constants.go`, dove tutte le formule sulla Relatività sono presenti.
 

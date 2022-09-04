@@ -47,14 +47,13 @@ package main
 import (
     "fmt"
     "github.com/Gabri432/gophysics/constants"
-    "github.com/Gabri432/gophysics/classical"
-    "github.com/Gabri432/gophysics/gravity"
+    "github.com/Gabri432/gophysics/formulas"
 )
 
 func main() {
     fmt.Println(constants.C)   <<< Write a constant
-    fmt.Println(classical.Force(3, 4))   <<< Call a function
-    myPlanet := gravity.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS} <<< Create a custom object
+    fmt.Println(formulas.Force(3, 4))   <<< Call a function
+    myPlanet := formulas.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS} <<< Create a custom object
 	fmt.Println(myPlanet.EscapeSpeed())  <<< Call object methods to ease some calculations
 }
 
@@ -87,18 +86,15 @@ func main() {
 #### gophysics (main)
 - `gophysics.go`, doesn't provide formulas, but other functions to simplify some actions.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
-#### classical
+
+#### formulas
 - `classical.go`, where all the Classical physics formulas are located.
-#### fluids
 - `fluids.go`, where all the Fluid formulas are located.
-#### gravity
 - `gravity.go`, where all the Gravity formulas are located.
-#### thermodynamics
 - `thermodynamics.go`, where all the Thermodynamics formulas are located.
-#### electromagnetism
 - `electromagnetism.go`, where all the Electromagnetism formulas are located.
-#### relativity
 - `relativity.go`, where all the Relativity formulas are located.
+
 #### constants
 - `constants.go`, where all the constants are located.
 
