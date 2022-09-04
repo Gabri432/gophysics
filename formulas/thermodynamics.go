@@ -1,5 +1,5 @@
 // It is a sub-package providing all thermodynamics related formulas of the gophysics library
-package thermodynamics
+package formulas
 
 // Defining custom Gas type with its own volume, pressure and temperature in celsius degrees.
 type GasBody struct {

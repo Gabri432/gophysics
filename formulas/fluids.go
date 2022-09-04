@@ -1,5 +1,5 @@
 // It is a sub-package providing all fluid dynamics related formulas of the gophysics library
-package fluids
+package formulas
 
 import "math"
 

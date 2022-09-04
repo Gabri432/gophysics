@@ -1,5 +1,5 @@
 // It is a sub-package providing all classical related formulas of the gophysics library
-package classical
+package formulas
 
 import "math"
 

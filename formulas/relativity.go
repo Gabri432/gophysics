@@ -1,5 +1,5 @@
 // It is a sub-package providing all relativity related formulas of the gophysics library
-package relativity
+package formulas
 
 import (
 	"math"
