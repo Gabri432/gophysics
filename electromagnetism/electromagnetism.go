@@ -1,3 +1,4 @@
+// It is a sub-package providing all electromagnetism related formulas of the gophysics library
 package electromagnetism
 
 import (

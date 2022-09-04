@@ -1,3 +1,4 @@
+// It is a sub-package providing all relativity related formulas of the gophysics library
 package relativity
 
 import (

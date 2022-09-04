@@ -1,3 +1,4 @@
+// It is a sub-package providing all the constants of the gophysics library
 package constants
 
 const (

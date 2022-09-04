@@ -1,3 +1,4 @@
+// It is a sub-package providing all thermodynamics related formulas of the gophysics library
 package thermodynamics
 
 // Defining custom Gas type with its own volume, pressure and temperature in celsius degrees.

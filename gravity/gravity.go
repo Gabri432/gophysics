@@ -1,3 +1,4 @@
+// It is a sub-package providing all gravitational related formulas of the gophysics library
 package gravity
 
 import (
