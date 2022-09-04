@@ -1,4 +1,8 @@
 4/09/2022
+
+v0.14.2
+PATCH - Fixing 'formulas' package description.
+
 v0.14.1
 PATCH - Using a folder called 'formulas' to allocated all Physics formulas.
 
