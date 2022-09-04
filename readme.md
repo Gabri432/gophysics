@@ -63,6 +63,22 @@ func main() {
 
 ```
 
+- Using mathematical functions
+```go
+import (
+    "fmt"
+    "github.com/Gabri432/gophysics/mathem"
+)
+
+func main() {
+    fmt.Println(mathem.Pi) <<< Writing a constant
+}
+
+=== Output ===
+3.1415926535
+
+```
+
 ## Project Structure
 ### Folders
 

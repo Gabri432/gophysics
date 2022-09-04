@@ -63,6 +63,22 @@ func main() {
 
 ```
 
+- Using mathematical functions
+```go
+import (
+    "fmt"
+    "github.com/Gabri432/gophysics/mathem"
+)
+
+func main() {
+    fmt.Println(mathem.Pi) <<< Writing a constant
+}
+
+=== Output ===
+3.1415926535
+
+```
+
 ## Struttura del progetto
 ### Cartelle
 
@@ -80,6 +96,7 @@ func main() {
 #### mathem 
 - `constants.go`, dove tutte le costanti matematiche sono presenti.
 - `conversions.go`, dove tutte le principali funzioni di calcolo matematico sono presenti.
+
 ## Contribuire al progetto
 - Se vuoi aggiungere una feature o fare un aggiustamento fai un giro in questa pagina su come fare: [Contribuire a gophysics](https://github.com/Gabri432/gophysics/blob/master/.github/CONTRIBUTING.it.md)
 
