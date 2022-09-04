@@ -29,7 +29,7 @@ func SphereVolume(radius float64) (volume float64, measurementUnit string) {
 
 // It calculates sine^2 of the angle in degrees
 func SineSquare(angleInDeg float64) float64 {
-	return (1 - math.Cos(2*(angleInDeg/57.2958))) / 2
+	return (1 - math.Cos(2*(angleInDeg/Radiant))) / 2
 }
 
 // It calculates cosine^2 of the angle in degrees
