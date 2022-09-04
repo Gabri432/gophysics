@@ -1,6 +1,11 @@
 package formulas
 
-import "math"
+import (
+	"math"
+
+	"github.com/Gabri432/gophysics/constants"
+	"github.com/Gabri432/gophysics/mathem"
+)
 
 // Defining custom body with its own mass, speed, volume
 type Body struct {
@@ -120,4 +125,29 @@ func AngularFreq(time float64) (value float64, measurementUnit string) {
 // Normal Force is the product between the mass, gravitational attracion field, angle cosine of the object.
 func NormalForce(mass, angleInDeg float64) (force float64, measurementUnit string) {
 	return mass * math.Cos(angleInDeg/57.2958), "N"
+}
+
+// Centripetal Force is the ratio between the mass and square speed product and the radius
+func CentripetalForce(mass, speed, radius float64) (force float64, measurementUnit string) {
+	return (mass * speed * speed) / radius, "N"
+}
+
+// Centripetal Acceleration is the ratio between the square speed and the radius
+func CentripetalAccel(speed, radius float64) (acceleration float64, measurementUnit string) {
+	return (speed * speed) / radius, "m/s^2"
+}
+
+// Pendulum Period, check for more information https://en.wikipedia.org/wiki/Pendulum
+func PendulumPeriod(pendulumLength float64) (time float64, measurementUnit string) {
+	return (2 * 3.1416) * math.Sqrt(pendulumLength/constants.G), "s"
+}
+
+// Maximum height of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+func MaxHeightProjectile(initialVelocity, angleInDeg float64) (height float64, measurementUnit string) {
+	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/57.2958)) / (2 * constants.G), "m"
+}
+
+// Horizontal range of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+func MaxRangeProjectile(initialVelocity, angleInDeg float64) (length float64, measurementUnit string) {
+	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/57.2958)), "m"
 }
