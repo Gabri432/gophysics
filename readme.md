@@ -46,13 +46,15 @@ package main
 
 import (
     "fmt"
-    "github.com/Gabri432/gophysics"
+    "github.com/Gabri432/gophysics/constants"
+    "github.com/Gabri432/gophysics/classical"
+    "github.com/Gabri432/gophysics/gravity"
 )
 
 func main() {
-    fmt.Println(gophysics.C)   <<< Write a constant
-    fmt.Println(gophysics.Force(3, 4))   <<< Call a function
-    myPlanet := gophysics.PlanetBody{Mass: gophysics.EARTH_MASS, Radius: gophysics.EARTH_RADIUS} <<< Create a custom object
+    fmt.Println(constants.C)   <<< Write a constant
+    fmt.Println(classical.Force(3, 4))   <<< Call a function
+    myPlanet := gravity.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS} <<< Create a custom object
 	fmt.Println(myPlanet.EscapeSpeed())  <<< Call object methods to ease some calculations
 }
 
