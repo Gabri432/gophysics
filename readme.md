@@ -14,6 +14,7 @@ A set of some of the most common physics formulas and constants.
 ### Classical mechanics
 - Force, Speed, Time, Work, Acceleration, Density, Intensity, Power, Momentum
 - Potential Energy, Mechanical Energy, Kinetic Energy, Frequency, Doppler Effect
+- Centripetal Acceleration, Centripetal Force, Pendulum Period, Projectile motion equations
 
 ### Gravity
 - Potential Gravitational Energy, Universal Gravitational Law, Gravitational Field

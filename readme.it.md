@@ -14,6 +14,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 ### Meccanica Classica
 - Forza, Velocità, Tempo, Lavoro, Accelerazione, Densità, Intensità, Potenza, Momento
 - Energia Potenziale, Meccanica, Cinetica, Frequenza, Effetto Doppler.
+- Accelerazione Centripeta, Forza Centripeta, Periodo del Pendolo, Equazioni del moto del proiettile
 ### Gravità
 - Energia potenziale Gravitazionale, Legge di Gravitazione Universale, Campo gravitazionale
 - Velocità di fuga
