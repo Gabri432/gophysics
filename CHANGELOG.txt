@@ -1,4 +1,7 @@
 4/09/2022
+v0.14.0
+ADDED - Every Physics field will now have its own package. 
+
 v0.13.0
 ADDED - New set of mathematical constants and functions common in Physics
 ADDED - New Physics formulas: Pressure, Normal Force, Angular Frequency.
