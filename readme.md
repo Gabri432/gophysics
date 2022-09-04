@@ -8,6 +8,7 @@ A set of some of the most common physics formulas and constants.
 ## Features
 - It provides Physics formulas and constants for calculation porpuses.
 - It allows to create some objects to simplify some calculations (see example).
+- It also provides some common Math formulas in Physics.
 
 ## Which formulas are contained?
 ### Classical mechanics
@@ -63,7 +64,9 @@ func main() {
 ```
 
 ## Project Structure
-### Files
+### Folders
+
+#### gophysics (main)
 - `gophysics.go`, doesn't provide formulas, but other functions to simplify some actions.
 - `classical.go`, where all the Classical physics formulas are located.
 - `fluids.go`, where all the Fluid formulas are located.
@@ -73,6 +76,10 @@ func main() {
 - `relativity.go`, where all the Relativity formulas are located.
 - `constants.go`, where all the constants are located.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
+
+#### mathem 
+- `constants.go`, where all the mathematical constants are located.
+- `conversions.go`, where all the main functions to make mathematical calculations are located.
 
 ## Contributing to this project
 - If you want to add a feature or making a fix check out this page explaining how to do it: [Contributing to gophysics](https://github.com/Gabri432/gophysics/blob/master/.github/CONTRIBUTING.md)

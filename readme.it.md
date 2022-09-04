@@ -8,6 +8,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 ## Funzionalità
 - Fornisce formule e costanti fisiche per fare calcoli.
 - Permette la creazione di alcuni oggetti per semplificare certi calcoli (vedi esempio).
+- Fornisce anche formule matematiche comuni alla fisica.
 
 ## Quali formule sono contenute?
 ### Meccanica Classica
@@ -62,9 +63,10 @@ func main() {
 
 ```
 
-
 ## Struttura del progetto
-### File
+### Cartelle
+
+#### gophysics (main)
 - `gophysics.go`, non fornisce alcuna formula, ma diverse funzioni per semplificare alcune operazioni.
 - `classical.go`, dove tutte le formule di FIsica Classica sono presenti.
 - `fluids.go`, dove tutte le formule sui Fluidi sono presenti.
@@ -75,6 +77,9 @@ func main() {
 - `constants.go`, dove tutte le costanti sono presenti.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
 
+#### mathem 
+- `constants.go`, dove tutte le costanti matematiche sono presenti.
+- `conversions.go`, dove tutte le principali funzioni di calcolo matematico sono presenti.
 ## Contribuire al progetto
 - Se vuoi aggiungere una feature o fare un aggiustamento fai un giro in questa pagina su come fare: [Contribuire a gophysics](https://github.com/Gabri432/gophysics/blob/master/.github/CONTRIBUTING.it.md)
 
