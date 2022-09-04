@@ -1,4 +1,7 @@
 4/09/2022
+v0.14.1
+PATCH - Using a folder called 'formulas' to allocated all Physics formulas.
+
 v0.14.0
 ADDED - Every Physics field will now have its own package. 
 
