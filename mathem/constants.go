@@ -1,4 +1,4 @@
-package math
+package mathem
 
 const (
 	//Greek Pi
