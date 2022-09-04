@@ -1,4 +1,4 @@
-package gophysics
+package thermodynamics
 
 // Defining custom Gas type with its own volume, pressure and temperature in celsius degrees.
 type GasBody struct {

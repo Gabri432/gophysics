@@ -1,4 +1,4 @@
-package gophysics
+package constants
 
 const (
 	//Earth Gravity constant in meters per square second

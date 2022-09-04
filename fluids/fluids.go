@@ -1,4 +1,4 @@
-package gophysics
+package fluids
 
 import "math"
 
