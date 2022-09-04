@@ -1,4 +1,8 @@
 4/09/2022
+v0.15.0
+ADDED - New Classical Physics functions: Centripetal Acceleration, Centripetal Force, Pendulum Period, Projectile motion equations.
+ADDED - New Body struct methods: Centripetal Acceleration, Centripetal Force, Projectile motion equations.
+ADDED - New mathematical formuals: SineSquare and CosineSquare.
 
 v0.14.2
 PATCH - Fixing 'formulas' package description.
