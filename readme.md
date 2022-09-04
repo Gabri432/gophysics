@@ -84,14 +84,21 @@ func main() {
 
 #### gophysics (main)
 - `gophysics.go`, doesn't provide formulas, but other functions to simplify some actions.
-- `classical.go`, where all the Classical physics formulas are located.
-- `fluids.go`, where all the Fluid formulas are located.
-- `gravity.go`, where all the Gravity formulas are located.
-- `thermodinamics.go`, where all the Thermodinamics formulas are located.
-- `electromagnetism.go`, where all the Electromagnetism formulas are located.
-- `relativity.go`, where all the Relativity formulas are located.
-- `constants.go`, where all the constants are located.
 - `license`, `readme.md`, `readme.it.md`, `CHANGELOG.txt`.
+#### classical
+- `classical.go`, where all the Classical physics formulas are located.
+#### fluids
+- `fluids.go`, where all the Fluid formulas are located.
+#### gravity
+- `gravity.go`, where all the Gravity formulas are located.
+#### thermodynamics
+- `thermodynamics.go`, where all the Thermodynamics formulas are located.
+#### electromagnetism
+- `electromagnetism.go`, where all the Electromagnetism formulas are located.
+#### relativity
+- `relativity.go`, where all the Relativity formulas are located.
+#### constants
+- `constants.go`, where all the constants are located.
 
 #### mathem 
 - `constants.go`, where all the mathematical constants are located.
