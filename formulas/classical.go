@@ -9,7 +9,7 @@ import (
 
 // Defining custom body with its own mass, speed, volume
 type Body struct {
-	Mass, Speed, Volume float64
+	Mass, Speed, Volume, Radius float64
 }
 
 // Force is the product between mass and acceleration
@@ -35,6 +35,31 @@ func (b Body) PotentialEner(acceleration, height float64) (value float64, measur
 // Kinetic Energy is the product between half the mass and the square speed
 func (b Body) KineticEner() (value float64, measurementUnit string) {
 	return KineticEner(b.Mass, b.Speed)
+}
+
+// Centripetal Force is the ratio between the mass and square speed product and the radius
+func (b Body) CentripetalForce() (force float64, measurementUnit string) {
+	return CentripetalForce(b.Mass, b.Speed, b.Radius)
+}
+
+// Centripetal Acceleration is the ratio between the square speed and the radius
+func (b Body) CentripetalAccel() (force float64, measurementUnit string) {
+	return CentripetalAccel(b.Speed, b.Radius)
+}
+
+// Maximum height of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+func (b Body) ProjectileFlightTime(angleInDeg float64) (value float64, measurementUnit string) {
+	return ProjectileFlightTime(b.Speed, angleInDeg)
+}
+
+// Horizontal range of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+func (b Body) ProjectileMaxHeight(angleInDeg float64) (value float64, measurementUnit string) {
+	return ProjectileMaxHeight(b.Speed, angleInDeg)
+}
+
+// Total time of flight of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+func (b Body) ProjectileMaxRange(angleInDeg float64) (value float64, measurementUnit string) {
+	return ProjectileMaxRange(b.Speed, angleInDeg)
 }
 
 // Force is the product between mass and acceleration
