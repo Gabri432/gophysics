@@ -143,11 +143,16 @@ func PendulumPeriod(pendulumLength float64) (time float64, measurementUnit strin
 }
 
 // Maximum height of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
-func MaxHeightProjectile(initialVelocity, angleInDeg float64) (height float64, measurementUnit string) {
-	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/57.2958)) / (2 * constants.G), "m"
+func ProjectileMaxHeight(initialVelocity, angleInDeg float64) (height float64, measurementUnit string) {
+	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/mathem.Radiant)) / (2 * constants.G), "m"
 }
 
 // Horizontal range of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
-func MaxRangeProjectile(initialVelocity, angleInDeg float64) (length float64, measurementUnit string) {
-	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/57.2958)), "m"
+func ProjectileMaxRange(initialVelocity, angleInDeg float64) (length float64, measurementUnit string) {
+	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/mathem.Radiant)), "m"
+}
+
+// Total time of flight of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+func ProjectileFlightTime(initialVelocity, angleInDeg float64) (time float64, measurementUnit string) {
+	return 2 * initialVelocity * math.Sin(angleInDeg/mathem.Radiant), "s"
 }
