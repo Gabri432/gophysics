@@ -97,17 +97,17 @@ const (
 	//Elementary Charge in Coulomb
 	ELEM_CHARGE = 1.602e-19
 
-	//Silver resistivity
-	SILVER_RESISTIVITY = 1.6e-8
+	//Silver resistivity at 20 °C
+	SILVER_RESISTIVITY = 1.59e-8
 
-	//Copper resistivity
-	COPPER_RESISTIVITY = 1.7e-8
+	//Copper resistivity at 20 °C
+	COPPER_RESISTIVITY = 1.68e-8
 
-	//Iron resistivity
-	IRON_RESISTIVITY = 1.3e-7
+	//Iron resistivity at 20 °C
+	IRON_RESISTIVITY = 9.7e-8
 
-	//Steel resistivity
-	STEEL_RESISTIVITY = 1.8e-7
+	//Stainless Steel resistivity at 20 °C
+	STEEL_RESISTIVITY = 69.0e-8
 
 	//Proportionality constant in [Newton/(Amprere**2)]
 	PROPORTION_CONST = 2.7e-7
@@ -116,7 +116,7 @@ const (
 	WEBER = 10e8
 
 	//Tesla in [Gauss]
-	TESLA = 10e6
+	TESLA = 10e4
 
 	//Atomic Mass in kilograms
 	ATOM_MASS = 1.66053e-27
@@ -142,27 +142,15 @@ const (
 	//Water viscosity at 20 Celsius deg, in [pascal*seconds]
 	WATER_VISCOSITY_DEG_20 = 10e-3
 
-	//Copper conducibility in [Watt/(meters*Kelvin)]
-	COPPER_CONDUCIBILITY = 384
+	//Copper thermal conductivity at 0 °C in [Watt/(meters*Kelvin)]
+	COPPER_THERM_CONDUCTIVITY = 401
 
-	//Gold conducibility in [Watt/(meters*Kelvin)]
-	GOLD_CONDUCIBILITY = 300
+	//Gold thermal conductivity at 0 °C in [Watt/(meters*Kelvin)]
+	GOLD_THERM_CONDUCTIVITY = 318
 
-	//Iron conducibility in [Watt/(meters*Kelvin)]
-	IRON_CONDUCIBILITY = 70
+	//Iron thermal conductivity at 0 °C in [Watt/(meters*Kelvin)]
+	IRON_THERM_CONDUCTIVITY = 83.5
 
-	//Dry Air conducibility in [Watt/(meters*Kelvin)]
-	AIR_CONDUCIBILITY = 0.02
-
-	//Carbon Emissivity
-	CARBON_EMISSIVITY = 0.92
-
-	//Iron Emissivity
-	IRON_EMISSIVITY = 0.40
-
-	//Copper Emissivity
-	COPPER_EMISSIVITY = 0.30
-
-	//Silver Emissivity
-	SILVER_EMISSIVITY = 0.05
+	//Dry Air thermal conductivity at 0 °C in [Watt/(meters*Kelvin)]
+	AIR_THERM_CONDUCTIVITY = 0.024
 )
