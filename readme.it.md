@@ -37,7 +37,8 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 ## Come si usa
 - Scarica 
 ```
-go get github.com/Gabri432/gophysics
+go get -u github.com/Gabri432/gophysics/formulas
+go get -u github.com/Gabri432/gophysics/constants
 ```
 
 

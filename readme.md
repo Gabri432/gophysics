@@ -38,7 +38,8 @@ A set of some of the most common physics formulas and constants.
 ## How to use it
 - Download 
 ```
-go get github.com/Gabri432/gophysics
+go get -u github.com/Gabri432/gophysics/formulas
+go get -u github.com/Gabri432/gophysics/constants
 ```
 
 - Example of usage
