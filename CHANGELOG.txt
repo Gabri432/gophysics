@@ -1,3 +1,8 @@
+8/09/2022
+v0.15.1
+PATCH - Fixing wrong resistivity values.
+REMOVED - Removing emissivity values.
+
 4/09/2022
 v0.15.0
 ADDED - New Classical Physics functions: Centripetal Acceleration, Centripetal Force, Pendulum Period, Projectile motion equations.
