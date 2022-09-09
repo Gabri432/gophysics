@@ -1,4 +1,6 @@
 // It is a sub-package providing all the constants of the gophysics library
+//
+// Here is the documentation https://gabri432.github.io/gophysics.io/routes/docs/docs.html#constants
 package constants
 
 const (

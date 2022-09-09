@@ -3,6 +3,8 @@
 // Its porpuse is to make simple conversion of values that are common for Physics calculations.
 //
 // Some of the most basic operations are radiants to degrees (and viceversa) conversions, area calculations, ecc...
+//
+// Here is the documentation Here is the documentation https://pkg.go.dev/github.com/Gabri432/gophysics/mathem
 package mathem
 
 import "math"
