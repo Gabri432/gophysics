@@ -1,3 +1,8 @@
+9/09/2022
+v0.16.0
+ADDED - New mathematical functions: 'Summatory' and 'ProductOfSequence'.
+PATCH - Moving 'PowerAt' and 'Power10' functions to the 'mathem' package.
+
 8/09/2022
 v0.15.1
 PATCH - Fixing wrong resistivity values.
