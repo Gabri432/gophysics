@@ -46,3 +46,27 @@ func PowerAt(base, power float64) float64 {
 func Power10(base float64, power int) float64 {
 	return base * math.Pow10(power)
 }
+
+/*
+Summatory function will calculate the user defined function from the starting to the ending integer value.
+
+Each output will be added to a total sum that will be returned.
+
+Example:
+
+import "github.com/Gabri432/gophysics/mathem"
+
+func main() {
+	var oddNumberFunction = func(value int) float64 {
+	                       return float64(2*value+1) //2n+1
+                           }
+    fmt.Println(mathem.Summatory(1, 3, oddNumberFunction)) // [2*(1)+1] + [2*(2)+1] + [2*(3)+1] = 3 + 5 + 7 = 15
+}
+
+*/
+func Summatory(startingValue, endingValue int, function func(value int) float64) (sum float64) {
+	for i := startingValue; i <= endingValue; i++ {
+		sum += function(i)
+	}
+	return sum
+}
