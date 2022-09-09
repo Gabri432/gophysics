@@ -36,3 +36,13 @@ func SineSquare(angleInDeg float64) float64 {
 func CosineSquare(angleInDeg float64) float64 {
 	return 1 - SineSquare(angleInDeg)
 }
+
+//PowerAt calls the math.Pow method to return base**power
+func PowerAt(base, power float64) float64 {
+	return math.Pow(base, power)
+}
+
+//Power10 calls the math.Pow10 method to return base*10**power
+func Power10(base float64, power int) float64 {
+	return base * math.Pow10(power)
+}
