@@ -50,7 +50,7 @@ func Power10(base float64, power int) float64 {
 /*
 Summatory function will calculate the user defined function from the starting to the ending integer value.
 
-Each output will be added to a total sum that will be returned.
+Each output will be added to the following one and then store into the resulting sum that will be returned.
 
 Example:
 
@@ -69,4 +69,28 @@ func Summatory(startingValue, endingValue int, function func(value int) float64)
 		sum += function(i)
 	}
 	return sum
+}
+
+/*
+ProductOfSequence function will calculate the user defined function from the starting to the ending integer value.
+
+Each output will be multiplied to the following one and then store into the resulting product that will be returned.
+
+Example:
+
+import "github.com/Gabri432/gophysics/mathem"
+
+func main() {
+	var squareFunction = func(value int) float64 {
+	                       return float64(value*value) //n*n
+                           }
+    fmt.Println(mathem.ProductOfSequence(1, 3, squareFunction)) // [1*1] * [2*2] + [3*3] = 1 * 4 * 9 = 36
+}
+*/
+func ProductOfSequence(startingValue, endingValue int, function func(value int) float64) (product float64) {
+	product = 1
+	for i := startingValue; i <= endingValue; i++ {
+		product *= function(i)
+	}
+	return product
 }
