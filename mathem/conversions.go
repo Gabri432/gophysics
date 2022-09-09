@@ -84,7 +84,7 @@ func main() {
 	var squareFunction = func(value int) float64 {
 	                       return float64(value*value) //n*n
                            }
-    fmt.Println(mathem.ProductOfSequence(1, 3, squareFunction)) // [1*1] * [2*2] + [3*3] = 1 * 4 * 9 = 36
+    fmt.Println(mathem.ProductOfSequence(1, 3, squareFunction)) // [1*1] * [2*2] * [3*3] = 1 * 4 * 9 = 36
 }
 */
 func ProductOfSequence(startingValue, endingValue int, function func(value int) float64) (product float64) {
