@@ -113,3 +113,25 @@ func ArithmeticMean(values ...float64) float64 {
 	}
 	return sum / float64(len(values))
 }
+
+/*
+Variance is the ratio between the square deviations of each value from the mean and the number of values.
+
+Example:
+
+func main() {
+	fmt.Println(mathem.Variance(2, 4, 4, 4, 5, 5, 7, 9)) // returns 4
+
+	// STEP 1: Arithmetic mean = 5;
+	// STEP 2: Sum of the square deviations =
+	// = [(2-5)^2 + (4-5)^2 + (4-5)^2 + (4-5)^2 + (5-5)^2 + (5-5)^2 + (7-5)^2 + (9-5)^2] = 40;
+	// STEP 3: Mean of those values = [(9 + 1 + 1 + 1 + 0 + 0 + 4 + 16) / 8] == 4
+}
+*/
+func Variance(values ...float64) float64 {
+	arithMean := ArithmeticMean(values...)
+	var squareDifference = func(index int) float64 {
+		return (values[index] - arithMean) * (values[index] - arithMean)
+	}
+	return Summatory(0, len(values)-1, squareDifference) / float64(len(values))
+}
