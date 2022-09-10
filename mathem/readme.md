@@ -37,4 +37,4 @@ func main() {
 ```
 
 ## Notes
-- Information were taken from the following italian book: Title "Teoria degli Errori e Fondamenti di Statistica", Author: "Maurizio Loreti".
+- Information for "Variance" and "Standard Deviation" were taken from the following italian book: Title "Teoria degli Errori e Fondamenti di Statistica", Author: "Maurizio Loreti".
