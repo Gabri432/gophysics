@@ -18,4 +18,20 @@ A sub-package of the gophysics library providing some of the most common Mathema
 - Sine Square, Cosine Square
 - Powering at, Powering 10 at
 - Summatory, Product of Sequence
-- Arithmetic Mean, Variance, Deviation Standard
+- Arithmetic Mean, Variance, Standard Deviation
+
+## Example
+```go
+import (
+    "fmt"
+    "github.com/Gabri432/gophysics/mathem"
+)
+
+func main() {
+    fmt.Println(mathem.StandardDeviation(2, 4, 4, 4, 5, 5, 7, 9)) // Writing a constant
+}
+
+=== Output ===
+2
+
+```

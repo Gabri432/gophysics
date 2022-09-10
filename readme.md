@@ -84,7 +84,7 @@ import (
 )
 
 func main() {
-    fmt.Println(mathem.Pi) <<< Writing a constant
+    fmt.Println(mathem.Pi) // Writing a constant
 }
 
 === Output ===
