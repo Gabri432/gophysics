@@ -63,10 +63,10 @@ import (
 )
 
 func main() {
-    fmt.Println(constants.C)   <<< Write a constant
-    fmt.Println(formulas.Force(3, 4))   <<< Call a function
-    myPlanet := formulas.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS} <<< Create a custom object
-	fmt.Println(myPlanet.EscapeSpeed())  <<< Call object methods to ease some calculations
+    fmt.Println(constants.C)   // Write a constant
+    fmt.Println(formulas.Force(3, 4))   // Call a function
+    myPlanet := formulas.PlanetBody{Mass: constants.EARTH_MASS, Radius: constants.EARTH_RADIUS} // Create a custom object
+	fmt.Println(myPlanet.EscapeSpeed())  // Call object methods to ease some calculations
 }
 
 === Output ===
