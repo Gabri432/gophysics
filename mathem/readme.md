@@ -35,3 +35,6 @@ func main() {
 2
 
 ```
+
+## Notes
+- Information were taken from the following italian book: Title "Teoria degli Errori e Fondamenti di Statistica", Author: "Maurizio Loreti".
