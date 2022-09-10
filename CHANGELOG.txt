@@ -1,3 +1,7 @@
+10/09/2022
+v0.17.0
+ADDED - New mathematical functions: 'ArithmeticMean', 'Variance' and 'StandardDeviation'.
+
 9/09/2022
 v0.16.0
 ADDED - New mathematical functions: 'Summatory' and 'ProductOfSequence'.
