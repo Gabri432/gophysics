@@ -28,7 +28,7 @@ import (
 )
 
 func main() {
-    fmt.Println(mathem.StandardDeviation(2, 4, 4, 4, 5, 5, 7, 9)) // Writing a constant
+    fmt.Println(mathem.StandardDeviation(2, 4, 4, 4, 5, 5, 7, 9)) // Using the Standard Deviation formula
 }
 
 === Output ===
