@@ -1,8 +1,8 @@
 // Package mathem is a sub-package of the gophysics library.
 //
-// Its porpuse is to make simple conversion of values that are common for Physics calculations.
+// Its porpuse is to make the most common Math calculations used for Physics.
 //
-// Some of the most basic operations are radiants to degrees (and viceversa) conversions, area calculations, ecc...
+// Some of the most basic operations are radiants to degrees (and viceversa) conversions, area calculations, summatory, ecc...
 //
 // Here is the documentation Here is the documentation https://pkg.go.dev/github.com/Gabri432/gophysics/mathem
 package mathem
@@ -95,4 +95,21 @@ func ProductOfSequence(startingValue, endingValue int, function func(value int) 
 		product *= function(i)
 	}
 	return product
+}
+
+/*
+Arithmetic mean return the average value of the len(values) user inserted numbers.
+
+Example:
+
+func main() {
+	mathem.ArithemticMean(1,2,3,4,6) // (1+2+3+4+6)/5 => 16/5 == 3.2
+}
+*/
+func ArithmeticMean(values ...float64) float64 {
+	sum := 0.0
+	for i := 0; i < len(values); i++ {
+		sum += values[i]
+	}
+	return sum / float64(len(values))
 }
