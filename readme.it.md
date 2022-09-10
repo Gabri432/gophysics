@@ -15,6 +15,7 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 - Forza, Velocità, Tempo, Lavoro, Accelerazione, Densità, Intensità, Potenza, Momento
 - Energia Potenziale, Meccanica, Cinetica, Frequenza, Effetto Doppler.
 - Accelerazione Centripeta, Forza Centripeta, Periodo del Pendolo, Equazioni del moto del proiettile
+
 ### Gravità
 - Energia potenziale Gravitazionale, Legge di Gravitazione Universale, Campo gravitazionale
 - Velocità di fuga
@@ -35,10 +36,19 @@ Una collezione di alcune delle formule e costanti più comuni in fisica.
 
 
 ## Come si usa
-- Scarica 
+- Scarica il package 'formulas' per ottenere le formule Fisiche:
 ```
 go get -u github.com/Gabri432/gophysics/formulas
+```
+
+- Scarica il package 'constants' per ottenere the costanti Fisiche:
+```
 go get -u github.com/Gabri432/gophysics/constants
+```
+
+- Scarica il package 'mathem' per ottenere funzioni e le costanti Matematiche della libreria:
+```
+go get -u github.com/Gabri432/gophysics/mathem
 ```
 
 

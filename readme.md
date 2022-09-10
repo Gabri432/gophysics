@@ -36,11 +36,21 @@ A set of some of the most common physics formulas and constants.
 
 
 ## How to use it
-- Download 
+- Download the 'formulas' package to get the Physics formulas:
 ```
 go get -u github.com/Gabri432/gophysics/formulas
+```
+
+- Download the 'constants' package to get the Physics constants:
+```
 go get -u github.com/Gabri432/gophysics/constants
 ```
+
+- Download the 'mathem' package to get the Mathematical functions and constants of the library
+```
+go get -u github.com/Gabri432/gophysics/mathem
+```
+
 
 - Example of usage
 ```go
