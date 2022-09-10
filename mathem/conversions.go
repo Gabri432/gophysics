@@ -135,3 +135,22 @@ func Variance(values ...float64) float64 {
 	}
 	return Summatory(0, len(values)-1, squareDifference) / float64(len(values))
 }
+
+/*
+StandardDeviation is the square root of the Variance.
+
+Example:
+
+func main() {
+	fmt.Println(mathem.StandardDeviation(2, 4, 4, 4, 5, 5, 7, 9)) // returns 2
+
+	// STEP 1: Arithmetic mean = 5;
+	// STEP 2: Sum of the square deviations =
+	// = [(2-5)^2 + (4-5)^2 + (4-5)^2 + (4-5)^2 + (5-5)^2 + (5-5)^2 + (7-5)^2 + (9-5)^2] = 40;
+	// STEP 3: Mean of those values = [(9 + 1 + 1 + 1 + 0 + 0 + 4 + 16) / 8] == 4;
+	// STEP 4: Square Root of Variance = 2;
+}
+*/
+func StandardDeviation(values ...float64) float64 {
+	return math.Sqrt(Variance(values...))
+}
