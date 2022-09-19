@@ -1,3 +1,8 @@
+19/09/2022
+v0.18.0
+ADDED - New Physics functions: 'HorizontalPos' and 'VerticalPos'.
+PATCH - Fixed wrong formula for function 'ProjectileMaxRange'.
+
 10/09/2022
 v0.17.0
 ADDED - New mathematical functions: 'ArithmeticMean', 'Variance' and 'StandardDeviation'.

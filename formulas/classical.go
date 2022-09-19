@@ -172,12 +172,22 @@ func ProjectileMaxHeight(initialVelocity, angleInDeg float64) (height float64, m
 	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/mathem.Radiant)) / (2 * constants.G), "m"
 }
 
-// Horizontal range of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
+// Horizontal range of projectile from ground, check for more info https://en.wikipedia.org/wiki/Range_of_a_projectile
 func ProjectileMaxRange(initialVelocity, angleInDeg float64) (length float64, measurementUnit string) {
-	return (initialVelocity * initialVelocity * mathem.SineSquare(angleInDeg/mathem.Radiant)), "m"
+	return (initialVelocity * initialVelocity * math.Sin((2*angleInDeg)/mathem.Radiant)) / constants.G, "m"
 }
 
 // Total time of flight of projectile, check for more info https://en.wikipedia.org/wiki/Projectile_motion
 func ProjectileFlightTime(initialVelocity, angleInDeg float64) (time float64, measurementUnit string) {
 	return 2 * initialVelocity * math.Sin(angleInDeg/mathem.Radiant), "s"
+}
+
+// Horizontal Position after t time from ground https://en.wikipedia.org/wiki/Range_of_a_projectile
+func HorizontalPos(velocity, timeInSeconds, angleInDeg float64) (horizontalPosition float64, measurementUnit string) {
+	return velocity * timeInSeconds * math.Cos(angleInDeg/mathem.Radiant), "m"
+}
+
+// Vertical Position after t time from ground https://en.wikipedia.org/wiki/Range_of_a_projectile
+func VerticalPos(velocity, timeInSeconds, angleInDeg float64) (verticalPosition float64, measurementUnit string) {
+	return velocity*timeInSeconds*math.Sin(angleInDeg/mathem.Radiant) - (1/2)*constants.G*timeInSeconds*timeInSeconds, "m"
 }
