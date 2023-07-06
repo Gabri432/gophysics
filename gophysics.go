@@ -13,7 +13,7 @@ Also If you enjoyed using this program consider putting a star in the github rep
 
 The package is under the MIT License https://github.com/Gabri432/gophysics/blob/master/license.
 
-Here is the documentation https://gabri432.github.io/gophysics.io/routes/docs/docs.html
+Here is the documentation https://gabri432.github.io/angular-gophysics.io/
 
 	Thank you!! :)
 */
