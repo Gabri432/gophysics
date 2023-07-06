@@ -98,7 +98,7 @@ func ProductOfSequence(startingValue, endingValue int, function func(value int) 
 }
 
 /*
-Arithmetic mean return the average value of the len(values) user inserted numbers.
+Calculates the arithmetic mean of the user given values.
 
 Example:
 
@@ -112,6 +112,24 @@ func ArithmeticMean(values ...float64) float64 {
 		sum += values[i]
 	}
 	return sum / float64(len(values))
+}
+
+/*
+Calculates the geometric mean of the user given values.
+
+Example:
+
+func main() {
+	mathem.GeometricMean(1,2,3,4) // (1*2*3*4)^(1/4) == 2.213
+}
+
+*/
+func GeometricMean(values ...float64) float64 {
+	product := 1.0
+	for i := 0; i < len(values); i++ {
+		product *= values[i]
+	}
+	return math.Pow(product, float64(1.0/len(values)))
 }
 
 /*
