@@ -133,6 +133,24 @@ func GeometricMean(values ...float64) float64 {
 }
 
 /*
+Calculates the Harmonic mean of the user given values.
+
+Example:
+
+func main() {
+	mathem.HarmonicMean(1,2,3,4) // [4/(1/1 + 1/2 + 1/3 + 1/4)] == 1.92
+}
+*/
+func HarmonicMean(values ...float64) float64 {
+	n := len(values)
+	var div float64
+	for i := 0; i < n; i++ {
+		div += 1 / values[i]
+	}
+	return float64(n) / div
+}
+
+/*
 Variance is the ratio between the square deviations of each value from the mean and the number of values.
 
 Example:
