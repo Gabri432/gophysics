@@ -1,3 +1,8 @@
+06/07/2023 (July the 6th 2023)
+v0.19.0
+ADDED - New mathematical functions: 'GeometricMean' and 'HarmonicMean'.
+PATCH - Fixed old links and function descriptions.
+
 19/09/2022
 v0.18.0
 ADDED - New Physics functions: 'HorizontalPos' and 'VerticalPos'.
