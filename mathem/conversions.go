@@ -4,7 +4,7 @@
 //
 // Some of the most basic operations are radiants to degrees (and viceversa) conversions, area calculations, summatory, ecc...
 //
-// Here is the documentation Here is the documentation https://pkg.go.dev/github.com/Gabri432/gophysics/mathem
+// Here is the documentation https://pkg.go.dev/github.com/Gabri432/gophysics/mathem
 package mathem
 
 import "math"
